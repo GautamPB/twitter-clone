@@ -1,0 +1,22 @@
+.tweeter {
+    padding-top: 20px;
+    background-color: white;
+}
+
+.tweeter__header {
+    border-bottom: solid 1px lightgray;
+}
+
+.tweeter__top {
+    display: flex;
+}
+
+.tweeter__profilePic {
+    margin: 10px;
+}
+
+.tweeter__top > input {
+    outline: none;
+    border: none;
+    font-size: large;
+}

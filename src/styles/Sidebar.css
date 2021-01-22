@@ -1,0 +1,52 @@
+.sidebar {
+    margin-left: 50px;
+    padding-right: 80px;
+    border-right: solid 1px lightgray;
+    height: 100vh;
+}
+
+.sidebar__img {
+    width: 60px;
+    object-fit: contain;
+}
+
+.sidebar__logo > button {
+    border-radius: 999px;
+}
+
+.sidebar__button {
+    background-color: #1da1f2;
+    border-radius: 999px;
+    text-align: center;
+}
+
+.sidebar__button:hover {
+    background-color: #0084b4;
+}
+
+.sidebar__button > Button {
+    font-weight: 700;
+    color: white;
+    padding: 10px;
+}
+
+.sidebar__button:hover {
+    cursor: pointer;
+}
+
+.sidebar__userInfo {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    padding: 10px;
+}
+
+.sidebar__userInfo > h4 {
+    padding-left: 10px;
+}
+
+.sidebar__userInfo:hover {
+    cursor: pointer;
+    background-color: #c0deed;
+    border-radius: 999px;
+}
