@@ -4,6 +4,8 @@
 }
 
 .tweeter__header {
+    padding-left: 10px;
+    padding-bottom: 10px;
     border-bottom: solid 1px lightgray;
 }
 
@@ -19,4 +21,31 @@
     outline: none;
     border: none;
     font-size: large;
+}
+
+.tweeter__bottom {
+    margin-left: 55px;
+    padding-bottom: 20px;
+}
+
+.tweeter__option {
+    margin-left: 5px;
+    color: #1da1f2;
+    padding: 5px;
+    border-radius: 999px;
+}
+
+.tweeter__option:hover {
+    cursor: pointer;
+    background-color: #c0deed;
+}
+
+.tweeter__bottom > Button {
+    float: right;
+    margin-right: 10px;
+    font-weight: 700;
+    background-color: #1da1f2;
+    border-radius: 999px;
+    padding: 5px 15px;
+    color: white;
 }
