@@ -2,4 +2,6 @@
     margin-right: 100px;
     width: 100%;
     background-color: #f5f8fa;
+    border-right: solid 1px lightgray;
+    height: 100vh;
 }

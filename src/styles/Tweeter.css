@@ -1,6 +1,12 @@
 .tweeter {
     padding-top: 20px;
     background-color: white;
+    border-top: solid 1px lightgray;
+    border-bottom: solid 1px lightgray;
+    margin-bottom: 15px;
+    /* -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4); */
 }
 
 .tweeter__header {
@@ -9,12 +15,20 @@
     border-bottom: solid 1px lightgray;
 }
 
+.tweeter__header:hover {
+    cursor: pointer;
+}
+
 .tweeter__top {
     display: flex;
 }
 
 .tweeter__profilePic {
     margin: 10px;
+}
+
+.tweeter__profilePic:hover {
+    cursor: pointer;
 }
 
 .tweeter__top > input {
@@ -48,4 +62,8 @@
     border-radius: 999px;
     padding: 5px 15px;
     color: white;
+}
+
+.tweeter__bottom > Button:hover {
+    background-color: #0084b4;
 }

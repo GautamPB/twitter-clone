@@ -37,10 +37,7 @@ const Sidebar = () => {
                 <Button>Tweet</Button>
             </div>
 
-            <div className="sidebar__userInfo">
-                <Avatar />
-                <h4>Gautam</h4>
-            </div>
+            <SidebarRow Icon={Avatar} title="Gautam" />
         </div>
     )
 }
