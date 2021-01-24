@@ -6,13 +6,24 @@ import GifIcon from '@material-ui/icons/Gif'
 import PollIcon from '@material-ui/icons/Poll'
 import EmojiIcon from '@material-ui/icons/EmojiEmotionsOutlined'
 import CalendarIcon from '@material-ui/icons/CalendarTodayOutlined'
+import { useStateValue } from './StateProvider'
+import db from '../firebase'
+import firebase from 'firebase'
 
 function Tweeter() {
+    const [{ user }, dispatch] = useStateValue()
+
     const [input, setInput] = useState('')
 
     const tweet = (e) => {
-        e.preventDefault() //prevents refresh of the page
-        console.log(input)
+        e.preventDefault()
+
+        db.collection('posts').add({
+            content: input,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+            profilePic: user.photoURL,
+            username: user.displayName,
+        })
         setInput('')
     }
 
@@ -21,7 +32,7 @@ function Tweeter() {
             <h2 className="tweeter__header">Home</h2>
 
             <div className="tweeter__top">
-                <Avatar className="tweeter__profilePic" />
+                <Avatar src={user.photoURL} className="tweeter__profilePic" />
                 <input
                     type="text"
                     placeholder="What's happening?"

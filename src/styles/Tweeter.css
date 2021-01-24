@@ -35,6 +35,7 @@
     outline: none;
     border: none;
     font-size: large;
+    width: 100%;
 }
 
 .tweeter__bottom {

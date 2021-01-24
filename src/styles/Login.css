@@ -3,15 +3,18 @@
     place-items: center;
     height: 100vh;
     margin: auto;
+    background-color: #c0deed;
+    width: 100%;
 }
 
 .login > div > img {
     height: 300px;
+    margin-top: -70px;
     object-fit: contain;
 }
 
 .login__name {
-    width: 600px;
+    width: 425px;
     object-fit: contain;
     margin-top: -50px;
 }
@@ -35,6 +38,6 @@
 }
 
 .login > Button:hover {
-    background-color: #c0deed;
-    color: #1da1f2;
+    background-color: #0084b4;
+    /* color: #1da1f2; */
 }

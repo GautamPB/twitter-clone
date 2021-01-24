@@ -10,8 +10,11 @@ import BookmarkIcon from '@material-ui/icons/BookmarkBorderOutlined'
 import ListIcon from '@material-ui/icons/ListAltOutlined'
 import PersonIcon from '@material-ui/icons/PersonOutlineOutlined'
 import MoreIcon from '@material-ui/icons/MoreHorizOutlined'
+import { useStateValue } from './StateProvider'
 
 const Sidebar = () => {
+    const [{ user }, dispatch] = useStateValue()
+
     return (
         <div className="sidebar">
             <div className="sidebar__logo">
@@ -37,7 +40,7 @@ const Sidebar = () => {
                 <Button>Tweet</Button>
             </div>
 
-            <SidebarRow Icon={Avatar} title="Gautam" />
+            <SidebarRow image={user.photoURL} title={user.displayName} />
         </div>
     )
 }

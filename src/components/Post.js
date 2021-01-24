@@ -6,13 +6,13 @@ import RetweetIcon from '@material-ui/icons/ReplayOutlined'
 import LikeIcon from '@material-ui/icons/FavoriteBorderOutlined'
 import ShareIcon from '@material-ui/icons/SendOutlined'
 
-function Post({ profilePic, username, content, timestamp }) {
+function Post({ profilePic, username, content, timestamp, key, email }) {
     return (
         <div className="post">
             <div className="post__top">
                 <Avatar src={profilePic} className="post__profilePic" />
                 <h4>{username}</h4>
-                <p>timestamp...</p>
+                <p>{new Date(timestamp?.toDate()).toUTCString()}</p>
             </div>
 
             <div className="post__content">
