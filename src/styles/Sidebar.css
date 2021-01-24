@@ -1,11 +1,10 @@
 .sidebar {
-    margin-left: 50px;
-    padding-right: 80px;
+    margin-left: 20px;
+    padding-right: 50px;
     border-right: solid 1px lightgray;
     min-height: 100vh;
     position: sticky;
     top: 0px;
-    position: static;
 }
 
 .sidebar__img {
